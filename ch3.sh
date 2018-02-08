@@ -12,9 +12,9 @@ touch devices.txt
 udevadm info --query=all --name=/dev/sda | devices.txt
 head devices.txt
 
-$echo "Next, we will pipe the udevadm monitor to 'more'. "
+$echo "Next, we will pipe the udevadm monitor to 'less'. "
 
-udevadm monitor | more
+udevadm monitor | less
 
 rm ATAid.txt
 rm devices.txt
